@@ -23,12 +23,18 @@ nav {
 }
 header {
     display: flex;
+    width: 100vw;
+    margin: 10px;
+}
+.spacer{
+    width: 70%;
+    height: 100%;
 }
 .list {
     width: 30wh;
      
     .obj {
-        width: 100%;
+        width: 30vw;
         height: 10vh;
         border-radius: 10px;
         background-color: aquamarine;
