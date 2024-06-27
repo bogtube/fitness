@@ -17,30 +17,12 @@
 
         <section>
             <? include "list.php"; ?>
-            <div class="obj">
-                <p>Benchpress</p>
-                <p>8. Mai</p>
-            </div>
-            <div class="obj">
-                <p>Benchpress</p>
-                <p>8. Mai</p>
-            </div>
-            <div class="obj">
-                <p>Benchpress</p>
-                <p>8. Mai</p>
-            </div>
-            <div class="obj add">
-                <p>+</p>
-            </div>
+            <script src="fetch_workout.js"></script>
         </section>
 
-        <h1>Hier sollte hello world stehen</h1>
-        <!--<ul id="dynamicList"></ul>-->
-
-        <script src="list.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
         <script src="change_display.js"></script>
-        <script src="get_rest.js"></script>
-        <script src="get_gain.js"></script>
+        <script src="fetch_gain.js"></script>
+        <script src="fetch_rest.js"></script>
     </body>
 </html>
