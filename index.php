@@ -7,14 +7,16 @@
         <title>fitness</title>
     </head>
     <body>
+
         <header>
-            <!-- Login -->
             <div id="rest" onclick="changeDisplay()"></div>
             <div id="info" onclick="changeDisplay()">
                 <div id="gain"></div>
             </div>
         </header>
+
         <section>
+            <? include "list.php"; ?>
             <div class="obj">
                 <p>Benchpress</p>
                 <p>8. Mai</p>
@@ -35,12 +37,10 @@
         <h1>Hier sollte hello world stehen</h1>
         <!--<ul id="dynamicList"></ul>-->
 
-        <?php include "test.php"; ?>
-
         <script src="list.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <script src="main.js"></script>
-        <script src="info-chart.js"></script>
-        <script src="gain-chart.js"></script>
+        <script src="change_display.js"></script>
+        <script src="get_rest.js"></script>
+        <script src="get_gain.js"></script>
     </body>
 </html>
