@@ -1,4 +1,4 @@
-var options = {
+var gainOptions = {
   series: [
     {
       name: "series1",
@@ -38,15 +38,5 @@ var options = {
   },
 };
 
-var chart = new ApexCharts(document.querySelector("#gain"), options);
-chart.render();
-
-/*
-var chart = new ApexCharts(el, options);
-var dataURL = chart.dataURI().then(({ imgURI, blob }) => {
-  const { jsPDF } = window.jspdf
-  const pdf = new jsPDF();
-  pdf.addImage(imgURI, 'PNG', 0, 0);
-  pdf.save("pdf-chart.pdf");
-})
-*/
+var gainChart = new ApexCharts(document.querySelector("#gain"), gainOptions);
+gainChart.render();
