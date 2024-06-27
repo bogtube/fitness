@@ -1,10 +1,10 @@
-fetch("fetch_data.php")
+fetch("fetch_workout.php")
   .then((response) => response.json())
   .then((data) => {
     let list = document.getElementById("dynamicList");
     data.forEach((item) => {
       let listItem = document.createElement("li");
-      listItem.textContent = `${item.name} - ${item.date}`; // Display name and date
+      listItem.textContent = `${item.name} - ${item.date}`; // muss noch angepasst werden @Linus
       list.appendChild(listItem);
     });
   })
