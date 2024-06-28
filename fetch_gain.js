@@ -2,12 +2,12 @@ let gainChart;
 
 // Daten für das Diagramm abrufen und Diagramm/Tabelle aktualisieren
 function fetchgainData() {
-  fetch("get_win_percentage.php")
+  fetch("get_gain.php")
     .then((response) => response.json())
     .then((data) => {
       console.log("Fetched data:", data); // Debugging
-      const splits = data.map((item) => item.Name);
-      const volume = data.map((item) => parseFloat(item.Gewinnrate));
+      const splits = data.map((item) => item.Splits);
+      const volume = data.map((item) => parseFloat(item.Volume));
 
       const gainOptions = {
         series: [

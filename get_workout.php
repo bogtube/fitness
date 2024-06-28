@@ -1,4 +1,4 @@
 <?php
 // @Bogdan
-// Ich brauche Daten und Splits
+// Ich brauche Daten ("Date") und Splits ("Split")
 ?>

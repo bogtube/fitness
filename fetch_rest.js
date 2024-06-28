@@ -6,14 +6,14 @@ function fetchrestData() {
     .then((response) => response.json())
     .then((data) => {
       console.log("Fetched data:", data); // Debugging
-      const splits = data.map((item) => item.Name);
-      const volume = data.map((item) => parseFloat(item.Gewinnrate));
+      const splits = data.map((item) => item.Split);
+      const rest = data.map((item) => parseFloat(item.Rest));
 
       const restOptions = {
         series: [
           {
-            name: "Volumen",
-            data: volume, // @Bogdan: some magic here
+            name: "Rest",
+            data: rest,
           },
         ],
         chart: {

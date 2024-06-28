@@ -1,4 +1,4 @@
 <?php
 // @Bogdan
-// ich brauche die Muskelgruppen und das Volumen (man kann in `sql` befehlen Rechnungen machen)
+// ich brauche die Muskelgruppen ("Splits") und das Volumen ("Volume") (man kann in `sql` befehlen Rechnungen machen)
 ?>
