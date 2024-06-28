@@ -10,6 +10,7 @@ fetch("get_workout.php")
       let formattedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
 
       listItem.textContent = `${item.Split} - ${formattedDate}`;
+      listItem.classList.add("workout"); // CSS-Klasse hinzufügen
       list.appendChild(listItem);
     });
   })

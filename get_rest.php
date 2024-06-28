@@ -1,5 +1,3 @@
-<? php
+<?php
 // @Bogdan "Split" und "Rest"
 ?>
- ?>
- ?>
