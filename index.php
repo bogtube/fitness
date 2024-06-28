@@ -18,6 +18,7 @@
         <section>
             <script src="fetch_workout.js"></script>
             <a href="add-workout.php" class="workout center">+</a>
+            <a href="impressum.php" class="workout">Impressum und Kontakt</a>
         </section>
 
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
