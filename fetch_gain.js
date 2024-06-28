@@ -5,25 +5,20 @@ function fetchgainData() {
   fetch("get_gain.php")
     .then((response) => response.json())
     .then((data) => {
-      console.log("Fetched data:", data); // Debugging
+      console.log("Fetched data:", data);
       const splits = data.map((item) => item.Splits);
-      const volume = data.map((item) => parseFloat(item.Volume));
+      const volume = data.map((item) =>
+        item.Volume.map((v) => parseInt(v, 10)),
+      );
 
       const gainOptions = {
-        series: [
-          {
-            name: "Volumen",
-            data: volume,
-          },
-        ],
+        series: splits.map((split, index) => ({
+          name: split,
+          data: volume[index],
+        })),
         chart: {
-          type: "bar",
+          type: "line",
           height: 350,
-        },
-        plotOptions: {
-          bar: {
-            horizontal: true,
-          },
         },
         dataLabels: {
           enabled: false,
@@ -32,7 +27,7 @@ function fetchgainData() {
           title: {
             text: "Gewinnrate (%)",
           },
-          categories: splits,
+          categories: data.map((item) => item.Date), // assuming `data` has a `Date` field for categories
         },
         yaxis: {
           title: {
