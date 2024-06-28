@@ -16,8 +16,8 @@
         </header>
 
         <section>
-            <? include "list.php"; ?>
             <script src="fetch_workout.js"></script>
+            <a href="add-workout.php" class="workout center">+</a>
         </section>
 
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
